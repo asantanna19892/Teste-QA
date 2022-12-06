@@ -14,6 +14,462 @@
     ],
     "elements": [
       {
+        "id": "testes-do-fluxo-busca-de-produto-no-site-da-printi;buscar-um-produto-na-página-da-printi;;2",
+        "keyword": "Esquema do Cenario",
+        "name": "Buscar um produto na página da Printi",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que acesso o mecanismo de busca Google buscando pelo site da 'Printi'",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13502198115
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizo uma busco pelo produto \"Caneca\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1796700799
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "valido que fui direcionado para o resultado da busca por \"Caneca\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3001656
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buscar",
+            "line": 4
+          },
+          {
+            "name": "@buscar_1",
+            "line": 8
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34329
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40287
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28882800561
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72683
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9731445933
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93907457
+            }
+          }
+        ]
+      },
+      {
+        "id": "testes-do-fluxo-busca-de-produto-no-site-da-printi;buscar-um-produto-na-página-da-printi;;3",
+        "keyword": "Esquema do Cenario",
+        "name": "Buscar um produto na página da Printi",
+        "description": "",
+        "line": 17,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que acesso o mecanismo de busca Google buscando pelo site da 'Printi'",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7838592902
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizo uma busco pelo produto \"Caderno\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1401751475
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "valido que fui direcionado para o resultado da busca por \"Caderno\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61573583
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buscar",
+            "line": 4
+          },
+          {
+            "name": "@buscar_1",
+            "line": 8
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29499
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23454
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5757524102
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24974
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7412209093
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63072792
+            }
+          }
+        ]
+      },
+      {
+        "id": "testes-do-fluxo-busca-de-produto-no-site-da-printi;buscar-um-produto-na-página-da-printi;;4",
+        "keyword": "Esquema do Cenario",
+        "name": "Buscar um produto na página da Printi",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que acesso o mecanismo de busca Google buscando pelo site da 'Printi'",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4687838242
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizo uma busco pelo produto \"Adesivo\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4507597103
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "valido que fui direcionado para o resultado da busca por \"Adesivo\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3521561
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buscar",
+            "line": 4
+          },
+          {
+            "name": "@buscar_1",
+            "line": 8
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21682
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18476
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1924456975
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66818
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6399649871
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65324637
+            }
+          }
+        ]
+      },
+      {
+        "id": "testes-do-fluxo-busca-de-produto-no-site-da-printi;buscar-um-produto-na-página-da-printi;;5",
+        "keyword": "Esquema do Cenario",
+        "name": "Buscar um produto na página da Printi",
+        "description": "",
+        "line": 19,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que acesso o mecanismo de busca Google buscando pelo site da 'Printi'",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9467757895
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizo uma busco pelo produto \"Flyer\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1966573148
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "valido que fui direcionado para o resultado da busca por \"Flyer\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113452500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buscar",
+            "line": 4
+          },
+          {
+            "name": "@buscar_1",
+            "line": 8
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21397
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21237
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 807101530
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53942
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6259367433
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64354359
+            }
+          }
+        ]
+      },
+      {
         "id": "testes-do-fluxo-busca-de-produto-no-site-da-printi;buscar-um-produto-que-não-existe-na-página-da-printi",
         "keyword": "Cenario",
         "name": "Buscar um produto que não existe na página da Printi",
@@ -30,7 +486,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14346338268
+              "duration": 6989220466
             }
           },
           {
@@ -42,7 +498,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 168950000
+              "duration": 481272326
             }
           },
           {
@@ -54,7 +510,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 129205845
+              "duration": 260239941
             }
           }
         ],
@@ -75,7 +531,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40984
+              "duration": 26722
             }
           },
           {
@@ -84,7 +540,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 45984
+              "duration": 45637
             }
           },
           {
@@ -93,7 +549,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32129185189
+              "duration": 786489657
             }
           },
           {
@@ -102,7 +558,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 57444
+              "duration": 55863
             }
           }
         ],
@@ -113,7 +569,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11131094891
+              "duration": 6350847735
             }
           },
           {
@@ -122,7 +578,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 255564909
+              "duration": 62474628
             }
           }
         ]

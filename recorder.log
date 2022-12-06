@@ -21,7 +21,7 @@
 [debug] Reading option '-framerate' ... matched as AVOption 'framerate' with argument '15.0'.
 [debug] Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '15'.
 [debug] Reading option '-vf' ... matched as option 'vf' (set video filters) with argument 'scale=trunc(iw/2)*2:trunc(ih/2)*2'.
-[debug] Reading option 'data/video/@buscar_2-BuscarumprodutoquenãoexistenapáginadaPrinti-37047cf5-c0ca-40eb-8163-42a02433968b.mp4' ... matched as output url.
+[debug] Reading option 'data/video/@buscar_2-BuscarumprodutoquenãoexistenapáginadaPrinti-e9403eb7-e6a8-46f7-87ad-e7bbc0529db1.mp4' ... matched as output url.
 [debug] Finished splitting the commandline.
 [debug] Parsing a group of options: global .
 [debug] Applying option y (overwrite output files) with argument 1.
@@ -31,44 +31,46 @@
 [debug] Applying option f (force format) with argument x11grab.
 [debug] Successfully parsed a group of options.
 [debug] Opening an input file: :0.
-[x11grab @ 0x556c9e10b8c0] [debug] Probe buffer size limit of 5000000 bytes reached
-[x11grab @ 0x556c9e10b8c0] [warning] Stream #0: not enough frames to estimate rate; consider increasing probesize
+[x11grab @ 0x55a32b3d78c0] [debug] Probe buffer size limit of 5000000 bytes reached
+[x11grab @ 0x55a32b3d78c0] [warning] Stream #0: not enough frames to estimate rate; consider increasing probesize
 [info] Input #0, x11grab, from ':0':
-[info]   Duration: N/A, start: 1670365926.760083, bitrate: N/A
+[info]   Duration: N/A, start: 1670370860.739444, bitrate: N/A
 [info]     Stream #0:0, 2, 1/1000000: Video: rawvideo, 1 reference frame (BGR[0] / 0x524742), bgr0, 1366x768, 0/1, 60 fps, 1000k tbr, 1000k tbn, 1000k tbc
 [debug] Successfully opened the file.
-[debug] Parsing a group of options: output url data/video/@buscar_2-BuscarumprodutoquenãoexistenapáginadaPrinti-37047cf5-c0ca-40eb-8163-42a02433968b.mp4.
+[debug] Parsing a group of options: output url data/video/@buscar_2-BuscarumprodutoquenãoexistenapáginadaPrinti-e9403eb7-e6a8-46f7-87ad-e7bbc0529db1.mp4.
 [debug] Applying option pix_fmt (set pixel format) with argument yuv420p.
 [debug] Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 15.
 [debug] Applying option vf (set video filters) with argument scale=trunc(iw/2)*2:trunc(ih/2)*2.
 [debug] Successfully parsed a group of options.
-[debug] Opening an output file: data/video/@buscar_2-BuscarumprodutoquenãoexistenapáginadaPrinti-37047cf5-c0ca-40eb-8163-42a02433968b.mp4.
-[file @ 0x556c9e11e940] [debug] Setting default whitelist 'file,crypto'
+[debug] Opening an output file: data/video/@buscar_2-BuscarumprodutoquenãoexistenapáginadaPrinti-e9403eb7-e6a8-46f7-87ad-e7bbc0529db1.mp4.
+[file @ 0x55a32b3ea940] [debug] Setting default whitelist 'file,crypto'
 [debug] Successfully opened the file.
 [info] Stream mapping:
 [info]   Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
 [info] Press [q] to stop, [?] for help
-[warning] Finishing stream 0:0 without any data written to it.
+[debug] cur_dts is invalid st:0 (0) [init:0 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
 [debug] detected 8 logical cores
-[Parsed_scale_0 @ 0x556c9e117300] [debug] Setting 'w' to value 'trunc(iw/2)*2'
-[Parsed_scale_0 @ 0x556c9e117300] [debug] Setting 'h' to value 'trunc(ih/2)*2'
-[Parsed_scale_0 @ 0x556c9e117300] [debug] Setting 'flags' to value 'bicubic'
-[Parsed_scale_0 @ 0x556c9e117300] [verbose] w:trunc(iw/2)*2 h:trunc(ih/2)*2 flags:'bicubic' interl:0
-[graph 0 input from stream 0:0 @ 0x556c9e11f380] [debug] Setting 'video_size' to value '1366x768'
-[graph 0 input from stream 0:0 @ 0x556c9e11f380] [debug] Setting 'pix_fmt' to value '123'
-[graph 0 input from stream 0:0 @ 0x556c9e11f380] [debug] Setting 'time_base' to value '1/1000000'
-[graph 0 input from stream 0:0 @ 0x556c9e11f380] [debug] Setting 'pixel_aspect' to value '0/1'
-[graph 0 input from stream 0:0 @ 0x556c9e11f380] [debug] Setting 'sws_param' to value 'flags=2'
-[graph 0 input from stream 0:0 @ 0x556c9e11f380] [debug] Setting 'frame_rate' to value '60/1'
-[graph 0 input from stream 0:0 @ 0x556c9e11f380] [verbose] w:1366 h:768 pixfmt:bgr0 tb:1/1000000 fr:60/1 sar:0/1 sws_param:flags=2
-[format @ 0x556c9e120500] [debug] Setting 'pix_fmts' to value 'yuv420p'
-[AVFilterGraph @ 0x556c9e11c5c0] [debug] query_formats: 4 queried, 3 merged, 0 already done, 0 delayed
-[Parsed_scale_0 @ 0x556c9e117300] [verbose] w:1366 h:768 fmt:bgr0 sar:0/1 -> w:1366 h:768 fmt:yuv420p sar:0/1 flags:0x4
-[libx264 @ 0x556c9e119a00] [debug] using mv_range_thread = 24
-[libx264 @ 0x556c9e119a00] [info] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
-[libx264 @ 0x556c9e119a00] [info] profile High, level 3.2
-[libx264 @ 0x556c9e119a00] [info] 264 - core 155 r2917 0a84d98 - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=15 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
-[info] Output #0, mp4, to 'data/video/@buscar_2-BuscarumprodutoquenãoexistenapáginadaPrinti-37047cf5-c0ca-40eb-8163-42a02433968b.mp4':
+[Parsed_scale_0 @ 0x55a32b3e8c80] [debug] Setting 'w' to value 'trunc(iw/2)*2'
+[Parsed_scale_0 @ 0x55a32b3e8c80] [debug] Setting 'h' to value 'trunc(ih/2)*2'
+[Parsed_scale_0 @ 0x55a32b3e8c80] [debug] Setting 'flags' to value 'bicubic'
+[Parsed_scale_0 @ 0x55a32b3e8c80] [verbose] w:trunc(iw/2)*2 h:trunc(ih/2)*2 flags:'bicubic' interl:0
+[graph 0 input from stream 0:0 @ 0x55a32b3e9940] [debug] Setting 'video_size' to value '1366x768'
+[graph 0 input from stream 0:0 @ 0x55a32b3e9940] [debug] Setting 'pix_fmt' to value '123'
+[graph 0 input from stream 0:0 @ 0x55a32b3e9940] [debug] Setting 'time_base' to value '1/1000000'
+[graph 0 input from stream 0:0 @ 0x55a32b3e9940] [debug] Setting 'pixel_aspect' to value '0/1'
+[graph 0 input from stream 0:0 @ 0x55a32b3e9940] [debug] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 0:0 @ 0x55a32b3e9940] [debug] Setting 'frame_rate' to value '60/1'
+[graph 0 input from stream 0:0 @ 0x55a32b3e9940] [verbose] w:1366 h:768 pixfmt:bgr0 tb:1/1000000 fr:60/1 sar:0/1 sws_param:flags=2
+[format @ 0x55a32b3ec480] [debug] Setting 'pix_fmts' to value 'yuv420p'
+[AVFilterGraph @ 0x55a32b3e85c0] [debug] query_formats: 4 queried, 3 merged, 0 already done, 0 delayed
+[Parsed_scale_0 @ 0x55a32b3e8c80] [verbose] w:1366 h:768 fmt:bgr0 sar:0/1 -> w:1366 h:768 fmt:yuv420p sar:0/1 flags:0x4
+[swscaler @ 0x55a32b3efa40] [warning] Warning: data is not aligned! This can lead to a speed loss
+[libx264 @ 0x55a32b3e5a00] [debug] using mv_range_thread = 24
+[libx264 @ 0x55a32b3e5a00] [info] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x55a32b3e5a00] [info] profile High, level 3.2
+[libx264 @ 0x55a32b3e5a00] [info] 264 - core 155 r2917 0a84d98 - H.264/MPEG-4 AVC codec - Copyleft 2003-2018 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=15 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[info] Output #0, mp4, to 'data/video/@buscar_2-BuscarumprodutoquenãoexistenapáginadaPrinti-e9403eb7-e6a8-46f7-87ad-e7bbc0529db1.mp4':
 [info]   Metadata:
 [info]     encoder         : Lavf58.29.100
 [info]     Stream #0:0, 0, 1/15360: Video: h264 (libx264), 1 reference frame (avc1 / 0x31637661), yuv420p, 1366x768, 0/1, q=-1--1, 15 fps, 15360 tbn, 15 tbc
@@ -76,13 +78,1894 @@
 [info]       encoder         : Lavc58.54.100 libx264
 [info]     Side data:
 [info]       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
-[info] frame=    0 fps=0.0 q=0.0 Lsize=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    
-[info] video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+[debug] Clipping frame in rate conversion by 0.000008
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 2 from stream 0 at ts 1
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 3 from stream 0 at ts 1
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 3 from stream 0 at ts 1
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 3 from stream 0 at ts 2
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 4 from stream 0 at ts 2
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 4 from stream 0 at ts 2
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 4 from stream 0 at ts 3
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 5 from stream 0 at ts 3
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 5 from stream 0 at ts 3
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 5 from stream 0 at ts 4
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 6 from stream 0 at ts 4
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 6 from stream 0 at ts 4
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 6 from stream 0 at ts 5
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 7 from stream 0 at ts 5
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 7 from stream 0 at ts 5
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 7 from stream 0 at ts 6
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 8 from stream 0 at ts 6
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 8 from stream 0 at ts 6
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 8 from stream 0 at ts 7
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 9 from stream 0 at ts 7
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 9 from stream 0 at ts 7
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 9 from stream 0 at ts 8
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[info] frame=   10 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=22 speed=   0x    [debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 10 from stream 0 at ts 8
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 10 from stream 0 at ts 8
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 10 from stream 0 at ts 9
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 11 from stream 0 at ts 9
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 11 from stream 0 at ts 9
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 11 from stream 0 at ts 10
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 12 from stream 0 at ts 10
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 12 from stream 0 at ts 10
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 12 from stream 0 at ts 11
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 13 from stream 0 at ts 11
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 13 from stream 0 at ts 11
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 13 from stream 0 at ts 12
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 14 from stream 0 at ts 12
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 14 from stream 0 at ts 12
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 14 from stream 0 at ts 13
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 15 from stream 0 at ts 13
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 15 from stream 0 at ts 13
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 15 from stream 0 at ts 14
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 16 from stream 0 at ts 14
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 16 from stream 0 at ts 14
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 16 from stream 0 at ts 15
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 17 from stream 0 at ts 15
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 17 from stream 0 at ts 15
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 17 from stream 0 at ts 16
+[info] frame=   18 fps= 18 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=46 speed=   0x    [debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 18 from stream 0 at ts 16
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 18 from stream 0 at ts 16
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 18 from stream 0 at ts 17
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 19 from stream 0 at ts 17
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 19 from stream 0 at ts 17
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 19 from stream 0 at ts 18
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 20 from stream 0 at ts 18
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 20 from stream 0 at ts 18
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 20 from stream 0 at ts 19
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 21 from stream 0 at ts 19
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 21 from stream 0 at ts 19
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 21 from stream 0 at ts 20
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 22 from stream 0 at ts 20
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 22 from stream 0 at ts 20
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 22 from stream 0 at ts 21
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 23 from stream 0 at ts 21
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 23 from stream 0 at ts 21
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 23 from stream 0 at ts 22
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 24 from stream 0 at ts 22
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 24 from stream 0 at ts 22
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 24 from stream 0 at ts 23
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 25 from stream 0 at ts 23
+[info] frame=   25 fps= 16 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=68 speed=   0x    [debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 25 from stream 0 at ts 23
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 25 from stream 0 at ts 24
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 26 from stream 0 at ts 24
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 26 from stream 0 at ts 24
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 26 from stream 0 at ts 25
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 27 from stream 0 at ts 25
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 27 from stream 0 at ts 25
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 27 from stream 0 at ts 26
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 28 from stream 0 at ts 26
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 28 from stream 0 at ts 26
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 28 from stream 0 at ts 27
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 29 from stream 0 at ts 27
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 29 from stream 0 at ts 27
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 29 from stream 0 at ts 28
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 30 from stream 0 at ts 28
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 30 from stream 0 at ts 28
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 30 from stream 0 at ts 29
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 31 from stream 0 at ts 29
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 31 from stream 0 at ts 29
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 31 from stream 0 at ts 30
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 32 from stream 0 at ts 30
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 32 from stream 0 at ts 30
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 32 from stream 0 at ts 31
+[info] frame=   33 fps= 16 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=91 speed=   0x    [debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 33 from stream 0 at ts 31
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 33 from stream 0 at ts 31
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 33 from stream 0 at ts 32
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 34 from stream 0 at ts 32
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 34 from stream 0 at ts 32
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 34 from stream 0 at ts 33
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 35 from stream 0 at ts 33
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 35 from stream 0 at ts 33
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 35 from stream 0 at ts 34
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 36 from stream 0 at ts 34
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 36 from stream 0 at ts 34
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 36 from stream 0 at ts 35
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 37 from stream 0 at ts 35
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 37 from stream 0 at ts 35
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 37 from stream 0 at ts 36
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 38 from stream 0 at ts 36
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 38 from stream 0 at ts 36
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 38 from stream 0 at ts 37
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 39 from stream 0 at ts 37
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 39 from stream 0 at ts 37
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 39 from stream 0 at ts 38
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 40 from stream 0 at ts 38
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 40 from stream 0 at ts 38
+[info] frame=   40 fps= 16 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=114 speed=   0x    [debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 40 from stream 0 at ts 39
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 41 from stream 0 at ts 39
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 41 from stream 0 at ts 39
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 41 from stream 0 at ts 40
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 42 from stream 0 at ts 40
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 42 from stream 0 at ts 40
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 42 from stream 0 at ts 41
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 43 from stream 0 at ts 41
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 43 from stream 0 at ts 41
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 43 from stream 0 at ts 42
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 44 from stream 0 at ts 42
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 44 from stream 0 at ts 42
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 44 from stream 0 at ts 43
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 45 from stream 0 at ts 43
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 45 from stream 0 at ts 43
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 45 from stream 0 at ts 44
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 46 from stream 0 at ts 44
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 46 from stream 0 at ts 44
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 46 from stream 0 at ts 45
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 47 from stream 0 at ts 45
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 47 from stream 0 at ts 45
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 47 from stream 0 at ts 46
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[info] frame=   48 fps= 16 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=136 speed=   0x    [debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 48 from stream 0 at ts 46
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 48 from stream 0 at ts 46
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 48 from stream 0 at ts 47
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 49 from stream 0 at ts 47
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 49 from stream 0 at ts 47
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 49 from stream 0 at ts 48
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 50 from stream 0 at ts 48
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 50 from stream 0 at ts 48
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 50 from stream 0 at ts 49
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 51 from stream 0 at ts 49
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 51 from stream 0 at ts 49
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 51 from stream 0 at ts 50
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 52 from stream 0 at ts 50
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 52 from stream 0 at ts 50
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 52 from stream 0 at ts 51
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 53 from stream 0 at ts 51
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 53 from stream 0 at ts 51
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 53 from stream 0 at ts 52
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 54 from stream 0 at ts 52
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 54 from stream 0 at ts 52
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 54 from stream 0 at ts 53
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 55 from stream 0 at ts 53
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 55 from stream 0 at ts 53
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 55 from stream 0 at ts 54
+[info] frame=   56 fps= 16 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A dup=0 drop=160 speed=   0x    [debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 56 from stream 0 at ts 54
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 56 from stream 0 at ts 54
+[debug] cur_dts is invalid st:0 (0) [init:1 i_done:0 finish:0] (this is harmless if it occurs once at the start per stream)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 56 from stream 0 at ts 55
+[libx264 @ 0x55a32b3e5a00] [debug] frame=   0 QP=14.52 NAL=3 Slice:I Poc:0   I:4128 P:0    SKIP:0    size=16793 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 57 from stream 0 at ts 55
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 57 from stream 0 at ts 55
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 57 from stream 0 at ts 56
+[libx264 @ 0x55a32b3e5a00] [debug] frame=   1 QP=20.07 NAL=2 Slice:P Poc:4   I:416  P:267  SKIP:3445 size=4419 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 58 from stream 0 at ts 56
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 58 from stream 0 at ts 56
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 58 from stream 0 at ts 57
+[libx264 @ 0x55a32b3e5a00] [debug] frame=   2 QP=31.23 NAL=0 Slice:B Poc:2   I:183  P:307  SKIP:3634 size=1007 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 59 from stream 0 at ts 57
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 59 from stream 0 at ts 57
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 59 from stream 0 at ts 58
+[libx264 @ 0x55a32b3e5a00] [debug] frame=   3 QP=17.42 NAL=2 Slice:P Poc:12  I:437  P:401  SKIP:3290 size=6455 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 60 from stream 0 at ts 58
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 60 from stream 0 at ts 58
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 60 from stream 0 at ts 59
+[libx264 @ 0x55a32b3e5a00] [debug] frame=   4 QP=24.79 NAL=2 Slice:B Poc:8   I:28   P:269  SKIP:3831 size=194 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 61 from stream 0 at ts 59
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 61 from stream 0 at ts 59
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 61 from stream 0 at ts 60
+[libx264 @ 0x55a32b3e5a00] [debug] frame=   5 QP=23.30 NAL=0 Slice:B Poc:6   I:7    P:103  SKIP:4018 size=101 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 62 from stream 0 at ts 60
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 62 from stream 0 at ts 60
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 62 from stream 0 at ts 61
+[libx264 @ 0x55a32b3e5a00] [debug] frame=   6 QP=27.43 NAL=0 Slice:B Poc:10  I:1    P:33   SKIP:4094 size=67 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 63 from stream 0 at ts 61
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 63 from stream 0 at ts 61
+[info] frame=   63 fps= 15 q=27.0 size=       0kB time=00:00:00.26 bitrate=   1.4kbits/s dup=0 drop=183 speed=0.0656x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 63 from stream 0 at ts 62
+[libx264 @ 0x55a32b3e5a00] [debug] frame=   7 QP=21.68 NAL=2 Slice:P Poc:20  I:25   P:41   SKIP:4062 size=262 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 64 from stream 0 at ts 62
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 64 from stream 0 at ts 62
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 64 from stream 0 at ts 63
+[libx264 @ 0x55a32b3e5a00] [debug] frame=   8 QP=25.38 NAL=2 Slice:B Poc:16  I:14   P:38   SKIP:4076 size=103 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 65 from stream 0 at ts 63
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 65 from stream 0 at ts 63
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 65 from stream 0 at ts 64
+[libx264 @ 0x55a32b3e5a00] [debug] frame=   9 QP=27.38 NAL=0 Slice:B Poc:14  I:7    P:35   SKIP:4086 size=80 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 66 from stream 0 at ts 64
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 66 from stream 0 at ts 64
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 66 from stream 0 at ts 65
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  10 QP=27.38 NAL=0 Slice:B Poc:18  I:7    P:19   SKIP:4102 size=71 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 67 from stream 0 at ts 65
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 67 from stream 0 at ts 65
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 67 from stream 0 at ts 66
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  11 QP=14.69 NAL=2 Slice:P Poc:28  I:19   P:12   SKIP:4097 size=99 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 68 from stream 0 at ts 66
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 68 from stream 0 at ts 66
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 68 from stream 0 at ts 67
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  12 QP=25.38 NAL=2 Slice:B Poc:24  I:13   P:22   SKIP:4093 size=82 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 69 from stream 0 at ts 67
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 69 from stream 0 at ts 67
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 69 from stream 0 at ts 68
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  13 QP=27.38 NAL=0 Slice:B Poc:22  I:3    P:16   SKIP:4109 size=62 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 70 from stream 0 at ts 68
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 70 from stream 0 at ts 68
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  14 QP=27.38 NAL=0 Slice:B Poc:26  I:3    P:16   SKIP:4109 size=61 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[info] frame=   71 fps= 16 q=27.0 size=       0kB time=00:00:00.80 bitrate=   0.5kbits/s dup=0 drop=204 speed=0.175x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 71 from stream 0 at ts 69
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 71 from stream 0 at ts 69
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 71 from stream 0 at ts 69
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 71 from stream 0 at ts 70
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  15 QP=14.69 NAL=2 Slice:P Poc:36  I:17   P:2    SKIP:4109 size=75 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 72 from stream 0 at ts 70
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 72 from stream 0 at ts 70
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 72 from stream 0 at ts 71
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  16 QP=25.38 NAL=2 Slice:B Poc:32  I:10   P:20   SKIP:4098 size=78 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 73 from stream 0 at ts 71
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 73 from stream 0 at ts 71
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 73 from stream 0 at ts 72
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  17 QP=27.43 NAL=0 Slice:B Poc:30  I:1    P:14   SKIP:4113 size=52 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 74 from stream 0 at ts 72
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 74 from stream 0 at ts 72
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 74 from stream 0 at ts 73
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  18 QP=27.43 NAL=0 Slice:B Poc:34  I:1    P:13   SKIP:4114 size=52 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 75 from stream 0 at ts 73
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 75 from stream 0 at ts 73
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 75 from stream 0 at ts 74
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  19 QP=14.69 NAL=2 Slice:P Poc:44  I:17   P:2    SKIP:4109 size=78 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 76 from stream 0 at ts 74
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 76 from stream 0 at ts 74
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 76 from stream 0 at ts 75
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  20 QP=25.38 NAL=2 Slice:B Poc:40  I:9    P:22   SKIP:4097 size=78 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 77 from stream 0 at ts 75
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 77 from stream 0 at ts 75
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 77 from stream 0 at ts 76
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  21 QP=27.43 NAL=0 Slice:B Poc:38  I:1    P:15   SKIP:4112 size=53 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 78 from stream 0 at ts 76
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 78 from stream 0 at ts 76
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 78 from stream 0 at ts 77
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  22 QP=27.43 NAL=0 Slice:B Poc:42  I:1    P:14   SKIP:4113 size=53 bytes
+[info] frame=   79 fps= 16 q=27.0 size=       0kB time=00:00:01.33 bitrate=   0.3kbits/s dup=0 drop=229 speed=0.262x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 79 from stream 0 at ts 77
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 79 from stream 0 at ts 77
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 79 from stream 0 at ts 78
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  23 QP=14.11 NAL=2 Slice:P Poc:52  I:23   P:6    SKIP:4099 size=244 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 80 from stream 0 at ts 78
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 80 from stream 0 at ts 78
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 80 from stream 0 at ts 79
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  24 QP=24.17 NAL=2 Slice:B Poc:48  I:15   P:29   SKIP:4084 size=96 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 81 from stream 0 at ts 79
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 81 from stream 0 at ts 79
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 81 from stream 0 at ts 80
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  25 QP=27.38 NAL=0 Slice:B Poc:46  I:2    P:23   SKIP:4103 size=61 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 82 from stream 0 at ts 80
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 82 from stream 0 at ts 80
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 82 from stream 0 at ts 81
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  26 QP=27.43 NAL=0 Slice:B Poc:50  I:1    P:19   SKIP:4108 size=62 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 83 from stream 0 at ts 81
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 83 from stream 0 at ts 81
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 83 from stream 0 at ts 82
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  27 QP=17.68 NAL=2 Slice:P Poc:60  I:578  P:26   SKIP:3524 size=12411 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 84 from stream 0 at ts 82
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 84 from stream 0 at ts 82
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 84 from stream 0 at ts 83
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  28 QP=30.43 NAL=2 Slice:B Poc:56  I:285  P:252  SKIP:3591 size=1327 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 85 from stream 0 at ts 83
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 85 from stream 0 at ts 83
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 85 from stream 0 at ts 84
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  29 QP=27.43 NAL=0 Slice:B Poc:54  I:14   P:97   SKIP:4017 size=105 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 86 from stream 0 at ts 84
+[info] frame=   86 fps= 15 q=27.0 size=       0kB time=00:00:01.80 bitrate=   0.2kbits/s dup=0 drop=251 speed=0.322x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 86 from stream 0 at ts 84
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 86 from stream 0 at ts 85
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  30 QP=25.14 NAL=0 Slice:B Poc:58  I:622  P:161  SKIP:3341 size=9414 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 87 from stream 0 at ts 85
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 87 from stream 0 at ts 85
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 87 from stream 0 at ts 86
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  31 QP=19.77 NAL=2 Slice:P Poc:68  I:398  P:111  SKIP:3619 size=5174 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 88 from stream 0 at ts 86
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 88 from stream 0 at ts 86
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 88 from stream 0 at ts 87
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  32 QP=24.97 NAL=2 Slice:B Poc:64  I:14   P:193  SKIP:3915 size=318 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 89 from stream 0 at ts 87
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 89 from stream 0 at ts 87
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 89 from stream 0 at ts 88
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  33 QP=26.86 NAL=0 Slice:B Poc:62  I:2    P:162  SKIP:3964 size=142 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 90 from stream 0 at ts 88
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 90 from stream 0 at ts 88
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 90 from stream 0 at ts 89
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  34 QP=28.09 NAL=0 Slice:B Poc:66  I:4    P:76   SKIP:4046 size=122 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 91 from stream 0 at ts 89
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 91 from stream 0 at ts 89
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 91 from stream 0 at ts 90
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  35 QP=19.35 NAL=2 Slice:P Poc:76  I:278  P:112  SKIP:3738 size=7302 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 92 from stream 0 at ts 90
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 92 from stream 0 at ts 90
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 92 from stream 0 at ts 91
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  36 QP=28.31 NAL=2 Slice:B Poc:72  I:13   P:211  SKIP:3886 size=453 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 93 from stream 0 at ts 91
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 93 from stream 0 at ts 91
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 93 from stream 0 at ts 92
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  37 QP=31.04 NAL=0 Slice:B Poc:70  I:6    P:127  SKIP:3994 size=201 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[info] frame=   94 fps= 15 q=27.0 size=       0kB time=00:00:02.33 bitrate=   0.2kbits/s dup=0 drop=274 speed=0.382x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 94 from stream 0 at ts 92
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 94 from stream 0 at ts 92
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 94 from stream 0 at ts 93
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  38 QP=30.00 NAL=0 Slice:B Poc:74  I:6    P:114  SKIP:4008 size=171 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 95 from stream 0 at ts 93
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 95 from stream 0 at ts 93
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 95 from stream 0 at ts 94
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  39 QP=22.10 NAL=2 Slice:P Poc:80  I:646  P:220  SKIP:3262 size=8912 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 96 from stream 0 at ts 94
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 96 from stream 0 at ts 94
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 96 from stream 0 at ts 95
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  40 QP=19.25 NAL=0 Slice:B Poc:78  I:15   P:429  SKIP:3684 size=331 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 97 from stream 0 at ts 95
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 97 from stream 0 at ts 95
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 97 from stream 0 at ts 96
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  41 QP=23.66 NAL=2 Slice:P Poc:86  I:1197 P:164  SKIP:2767 size=19282 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 98 from stream 0 at ts 96
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 98 from stream 0 at ts 96
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 98 from stream 0 at ts 97
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  42 QP=28.41 NAL=2 Slice:B Poc:82  I:76   P:484  SKIP:3566 size=598 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 99 from stream 0 at ts 97
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 99 from stream 0 at ts 97
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 99 from stream 0 at ts 98
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  43 QP=19.72 NAL=0 Slice:B Poc:84  I:25   P:161  SKIP:3942 size=256 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 100 from stream 0 at ts 98
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 100 from stream 0 at ts 98
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 100 from stream 0 at ts 99
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  44 QP=18.81 NAL=2 Slice:P Poc:94  I:1646 P:61   SKIP:2421 size=53347 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 101 from stream 0 at ts 99
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 101 from stream 0 at ts 99
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 101 from stream 0 at ts 100
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  45 QP=15.75 NAL=2 Slice:B Poc:90  I:226  P:660  SKIP:3242 size=696 bytes
+[info] frame=  102 fps= 15 q=27.0 size=       0kB time=00:00:02.86 bitrate=   0.1kbits/s dup=0 drop=298 speed=0.433x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 102 from stream 0 at ts 100
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 102 from stream 0 at ts 100
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 102 from stream 0 at ts 101
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  46 QP=25.88 NAL=0 Slice:B Poc:88  I:412  P:239  SKIP:3471 size=3105 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 103 from stream 0 at ts 101
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 103 from stream 0 at ts 101
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 103 from stream 0 at ts 102
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  47 QP=27.19 NAL=0 Slice:B Poc:92  I:1    P:249  SKIP:3877 size=156 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 104 from stream 0 at ts 102
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 104 from stream 0 at ts 102
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 104 from stream 0 at ts 103
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  48 QP=20.45 NAL=2 Slice:P Poc:102 I:473  P:85   SKIP:3570 size=20283 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 105 from stream 0 at ts 103
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 105 from stream 0 at ts 103
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 105 from stream 0 at ts 104
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  49 QP=25.33 NAL=2 Slice:B Poc:98  I:22   P:412  SKIP:3689 size=1155 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 106 from stream 0 at ts 104
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 106 from stream 0 at ts 104
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 106 from stream 0 at ts 105
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  50 QP=22.35 NAL=0 Slice:B Poc:96  I:35   P:297  SKIP:3795 size=318 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 107 from stream 0 at ts 105
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 107 from stream 0 at ts 105
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 107 from stream 0 at ts 106
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  51 QP=30.35 NAL=0 Slice:B Poc:100 I:21   P:147  SKIP:3960 size=201 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 108 from stream 0 at ts 106
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 108 from stream 0 at ts 106
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 108 from stream 0 at ts 107
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  52 QP=18.74 NAL=2 Slice:P Poc:110 I:78   P:63   SKIP:3987 size=2016 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 109 from stream 0 at ts 107
+[info] frame=  109 fps= 15 q=27.0 size=       0kB time=00:00:03.33 bitrate=   0.1kbits/s dup=0 drop=320 speed=0.468x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 109 from stream 0 at ts 107
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 109 from stream 0 at ts 108
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  53 QP=24.07 NAL=2 Slice:B Poc:106 I:27   P:176  SKIP:3925 size=527 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 110 from stream 0 at ts 108
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 110 from stream 0 at ts 108
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 110 from stream 0 at ts 109
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  54 QP=30.00 NAL=0 Slice:B Poc:104 I:19   P:157  SKIP:3952 size=194 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 111 from stream 0 at ts 109
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 111 from stream 0 at ts 109
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 111 from stream 0 at ts 110
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  55 QP=30.00 NAL=0 Slice:B Poc:108 I:17   P:93   SKIP:4018 size=160 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 112 from stream 0 at ts 110
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 112 from stream 0 at ts 110
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 112 from stream 0 at ts 111
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  56 QP=13.85 NAL=2 Slice:P Poc:118 I:11   P:18   SKIP:4099 size=172 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 113 from stream 0 at ts 111
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 113 from stream 0 at ts 111
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 113 from stream 0 at ts 112
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  57 QP=28.00 NAL=2 Slice:B Poc:114 I:18   P:82   SKIP:4027 size=192 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 114 from stream 0 at ts 112
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 114 from stream 0 at ts 112
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 114 from stream 0 at ts 113
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  58 QP=19.90 NAL=0 Slice:B Poc:112 I:25   P:53   SKIP:4049 size=159 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 115 from stream 0 at ts 113
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 115 from stream 0 at ts 113
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 115 from stream 0 at ts 114
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  59 QP=25.19 NAL=0 Slice:B Poc:116 I:20   P:53   SKIP:4055 size=149 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 116 from stream 0 at ts 114
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 116 from stream 0 at ts 114
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 116 from stream 0 at ts 115
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  60 QP=22.71 NAL=2 Slice:P Poc:126 I:10   P:8    SKIP:4110 size=106 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[info] frame=  117 fps= 15 q=27.0 size=       0kB time=00:00:03.86 bitrate=   0.1kbits/s dup=0 drop=343 speed=0.507x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 117 from stream 0 at ts 115
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 117 from stream 0 at ts 115
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 117 from stream 0 at ts 116
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  61 QP=25.91 NAL=2 Slice:B Poc:122 I:20   P:58   SKIP:4050 size=146 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 118 from stream 0 at ts 116
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 118 from stream 0 at ts 116
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 118 from stream 0 at ts 117
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  62 QP=23.22 NAL=0 Slice:B Poc:120 I:12   P:51   SKIP:4065 size=118 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 119 from stream 0 at ts 117
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 119 from stream 0 at ts 117
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 119 from stream 0 at ts 118
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  63 QP=30.00 NAL=0 Slice:B Poc:124 I:9    P:47   SKIP:4072 size=105 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 120 from stream 0 at ts 118
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 120 from stream 0 at ts 118
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 120 from stream 0 at ts 119
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  64 QP=24.69 NAL=2 Slice:P Poc:134 I:45   P:18   SKIP:4065 size=2800 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 121 from stream 0 at ts 119
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 121 from stream 0 at ts 119
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 121 from stream 0 at ts 120
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  65 QP=23.23 NAL=2 Slice:B Poc:130 I:15   P:91   SKIP:4022 size=204 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 122 from stream 0 at ts 120
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 122 from stream 0 at ts 120
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 122 from stream 0 at ts 121
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  66 QP=27.13 NAL=0 Slice:B Poc:128 I:8    P:42   SKIP:4078 size=116 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 123 from stream 0 at ts 121
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 123 from stream 0 at ts 121
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 123 from stream 0 at ts 122
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  67 QP=30.00 NAL=0 Slice:B Poc:132 I:8    P:82   SKIP:4038 size=132 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 124 from stream 0 at ts 122
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 124 from stream 0 at ts 122
+[info] frame=  124 fps= 15 q=27.0 size=       0kB time=00:00:04.33 bitrate=   0.1kbits/s dup=0 drop=366 speed=0.533x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 124 from stream 0 at ts 123
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  68 QP=19.83 NAL=2 Slice:P Poc:142 I:4    P:12   SKIP:4112 size=118 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 125 from stream 0 at ts 123
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 125 from stream 0 at ts 123
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 125 from stream 0 at ts 124
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  69 QP=14.19 NAL=2 Slice:B Poc:138 I:14   P:56   SKIP:4058 size=133 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 126 from stream 0 at ts 124
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 126 from stream 0 at ts 124
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 126 from stream 0 at ts 125
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  70 QP=24.26 NAL=0 Slice:B Poc:136 I:0    P:49   SKIP:4079 size=79 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 127 from stream 0 at ts 125
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 127 from stream 0 at ts 125
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 127 from stream 0 at ts 126
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  71 QP=30.00 NAL=0 Slice:B Poc:140 I:0    P:38   SKIP:4090 size=72 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 128 from stream 0 at ts 126
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 128 from stream 0 at ts 126
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 128 from stream 0 at ts 127
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  72 QP=20.00 NAL=2 Slice:P Poc:150 I:1    P:2    SKIP:4125 size=78 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 129 from stream 0 at ts 127
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 129 from stream 0 at ts 127
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 129 from stream 0 at ts 128
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  73 QP=25.13 NAL=2 Slice:B Poc:146 I:1    P:61   SKIP:4066 size=99 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 130 from stream 0 at ts 128
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 130 from stream 0 at ts 128
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 130 from stream 0 at ts 129
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  74 QP=30.00 NAL=0 Slice:B Poc:144 I:5    P:26   SKIP:4097 size=77 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 131 from stream 0 at ts 129
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 131 from stream 0 at ts 129
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 131 from stream 0 at ts 130
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  75 QP=19.69 NAL=0 Slice:B Poc:148 I:6    P:28   SKIP:4094 size=86 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[info] frame=  132 fps= 15 q=27.0 size=       0kB time=00:00:04.86 bitrate=   0.1kbits/s dup=0 drop=388 speed=0.564x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 132 from stream 0 at ts 130
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 132 from stream 0 at ts 130
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 132 from stream 0 at ts 131
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  76 QP=15.63 NAL=2 Slice:P Poc:158 I:1391 P:31   SKIP:2706 size=2346 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 133 from stream 0 at ts 131
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 133 from stream 0 at ts 131
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 133 from stream 0 at ts 132
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  77 QP=31.45 NAL=2 Slice:B Poc:154 I:257  P:467  SKIP:3404 size=482 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 134 from stream 0 at ts 132
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 134 from stream 0 at ts 132
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 134 from stream 0 at ts 133
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  78 QP=26.17 NAL=0 Slice:B Poc:152 I:1    P:274  SKIP:3853 size=160 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 135 from stream 0 at ts 133
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 135 from stream 0 at ts 133
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 135 from stream 0 at ts 134
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  79 QP=26.21 NAL=0 Slice:B Poc:156 I:2    P:148  SKIP:3977 size=121 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 136 from stream 0 at ts 134
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 136 from stream 0 at ts 134
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 136 from stream 0 at ts 135
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  80 QP=21.05 NAL=2 Slice:P Poc:160 I:44   P:19   SKIP:4065 size=651 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 137 from stream 0 at ts 135
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 137 from stream 0 at ts 135
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 137 from stream 0 at ts 136
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  81 QP=19.46 NAL=2 Slice:P Poc:162 I:56   P:5    SKIP:4067 size=634 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 138 from stream 0 at ts 136
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 138 from stream 0 at ts 136
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 138 from stream 0 at ts 137
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  82 QP=14.36 NAL=2 Slice:P Poc:170 I:60   P:5    SKIP:4063 size=304 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 139 from stream 0 at ts 137
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 139 from stream 0 at ts 137
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 139 from stream 0 at ts 138
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  83 QP=28.96 NAL=2 Slice:B Poc:166 I:5    P:83   SKIP:4040 size=134 bytes
+[info] frame=  140 fps= 15 q=27.0 size=       0kB time=00:00:05.40 bitrate=   0.1kbits/s dup=0 drop=412 speed=0.59x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 140 from stream 0 at ts 138
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 140 from stream 0 at ts 138
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 140 from stream 0 at ts 139
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  84 QP=29.62 NAL=0 Slice:B Poc:164 I:54   P:44   SKIP:4029 size=218 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 141 from stream 0 at ts 139
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 141 from stream 0 at ts 139
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 141 from stream 0 at ts 140
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  85 QP=28.09 NAL=0 Slice:B Poc:168 I:0    P:38   SKIP:4089 size=80 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 142 from stream 0 at ts 140
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 142 from stream 0 at ts 140
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 142 from stream 0 at ts 141
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  86 QP=14.50 NAL=2 Slice:P Poc:178 I:56   P:7    SKIP:4065 size=1284 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 143 from stream 0 at ts 141
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 143 from stream 0 at ts 141
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 143 from stream 0 at ts 142
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  87 QP=19.50 NAL=2 Slice:B Poc:174 I:17   P:85   SKIP:4026 size=736 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 144 from stream 0 at ts 142
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 144 from stream 0 at ts 142
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 144 from stream 0 at ts 143
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  88 QP=29.09 NAL=0 Slice:B Poc:172 I:1    P:56   SKIP:4067 size=252 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] scene cut at 103 Icost:3359746 Pcost:2787037 ratio:0.1705 bias:0.2123 gop:103 (imb:2627 pmb:1237)
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 145 from stream 0 at ts 143
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 145 from stream 0 at ts 143
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 145 from stream 0 at ts 144
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  89 QP=28.09 NAL=0 Slice:B Poc:176 I:0    P:97   SKIP:4031 size=118 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 146 from stream 0 at ts 144
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 146 from stream 0 at ts 144
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 146 from stream 0 at ts 145
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  90 QP=14.32 NAL=2 Slice:P Poc:184 I:2882 P:17   SKIP:1229 size=7759 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 147 from stream 0 at ts 145
+[info] frame=  147 fps= 15 q=27.0 size=       0kB time=00:00:05.86 bitrate=   0.1kbits/s dup=0 drop=434 speed=0.608x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 147 from stream 0 at ts 145
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 147 from stream 0 at ts 146
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  91 QP=29.00 NAL=2 Slice:B Poc:180 I:1    P:196  SKIP:3931 size=141 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 148 from stream 0 at ts 146
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 148 from stream 0 at ts 146
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 148 from stream 0 at ts 147
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  92 QP=27.68 NAL=0 Slice:B Poc:182 I:33   P:191  SKIP:3904 size=196 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 149 from stream 0 at ts 147
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 149 from stream 0 at ts 147
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 149 from stream 0 at ts 148
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  93 QP=20.05 NAL=2 Slice:P Poc:192 I:2167 P:62   SKIP:1899 size=90979 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 150 from stream 0 at ts 148
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 150 from stream 0 at ts 148
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 150 from stream 0 at ts 149
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  94 QP=28.02 NAL=2 Slice:B Poc:188 I:54   P:262  SKIP:3810 size=414 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 151 from stream 0 at ts 149
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 151 from stream 0 at ts 149
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 151 from stream 0 at ts 150
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  95 QP=30.25 NAL=0 Slice:B Poc:186 I:31   P:183  SKIP:3914 size=163 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 152 from stream 0 at ts 150
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 152 from stream 0 at ts 150
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 152 from stream 0 at ts 151
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  96 QP=30.25 NAL=0 Slice:B Poc:190 I:31   P:85   SKIP:4012 size=181 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 153 from stream 0 at ts 151
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 153 from stream 0 at ts 151
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 153 from stream 0 at ts 152
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  97 QP=21.27 NAL=2 Slice:P Poc:200 I:371  P:262  SKIP:3495 size=3237 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 154 from stream 0 at ts 152
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 154 from stream 0 at ts 152
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 154 from stream 0 at ts 153
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  98 QP=25.57 NAL=2 Slice:B Poc:196 I:65   P:304  SKIP:3757 size=418 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[info] frame=  155 fps= 15 q=27.0 size=     256kB time=00:00:06.40 bitrate= 327.7kbits/s dup=0 drop=457 speed=0.629x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 155 from stream 0 at ts 153
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 155 from stream 0 at ts 153
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 155 from stream 0 at ts 154
+[libx264 @ 0x55a32b3e5a00] [debug] frame=  99 QP=26.80 NAL=0 Slice:B Poc:194 I:32   P:135  SKIP:3960 size=207 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 156 from stream 0 at ts 154
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 156 from stream 0 at ts 154
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 156 from stream 0 at ts 155
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 100 QP=30.25 NAL=0 Slice:B Poc:198 I:31   P:204  SKIP:3893 size=208 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 157 from stream 0 at ts 155
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 157 from stream 0 at ts 155
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 157 from stream 0 at ts 156
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 101 QP=21.25 NAL=2 Slice:P Poc:204 I:22   P:22   SKIP:4084 size=528 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 158 from stream 0 at ts 156
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 158 from stream 0 at ts 156
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 158 from stream 0 at ts 157
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 102 QP=17.18 NAL=0 Slice:B Poc:202 I:2    P:72   SKIP:4053 size=145 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 159 from stream 0 at ts 157
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 159 from stream 0 at ts 157
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 159 from stream 0 at ts 158
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 103 QP=16.35 NAL=3 Slice:I Poc:0   I:4128 P:0    SKIP:0    size=126953 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 160 from stream 0 at ts 158
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 160 from stream 0 at ts 158
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 160 from stream 0 at ts 159
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 104 QP=23.04 NAL=2 Slice:P Poc:6   I:555  P:292  SKIP:3281 size=17011 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 161 from stream 0 at ts 159
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 161 from stream 0 at ts 159
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 161 from stream 0 at ts 160
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 105 QP=24.05 NAL=2 Slice:B Poc:2   I:75   P:303  SKIP:3750 size=2915 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 162 from stream 0 at ts 160
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 162 from stream 0 at ts 160
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 162 from stream 0 at ts 161
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 106 QP=23.87 NAL=0 Slice:B Poc:4   I:2    P:400  SKIP:3725 size=365 bytes
+[info] frame=  163 fps= 15 q=27.0 size=     256kB time=00:00:06.93 bitrate= 302.5kbits/s dup=0 drop=481 speed=0.649x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 163 from stream 0 at ts 161
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 163 from stream 0 at ts 161
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 163 from stream 0 at ts 162
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 107 QP=17.63 NAL=2 Slice:P Poc:14  I:2155 P:1973 SKIP:0    size=30050 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 164 from stream 0 at ts 162
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 164 from stream 0 at ts 162
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 164 from stream 0 at ts 163
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 108 QP=25.20 NAL=2 Slice:B Poc:10  I:11   P:262  SKIP:3851 size=595 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 165 from stream 0 at ts 163
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 165 from stream 0 at ts 163
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 165 from stream 0 at ts 164
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 109 QP=27.38 NAL=0 Slice:B Poc:8   I:3    P:209  SKIP:3916 size=198 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 166 from stream 0 at ts 164
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 166 from stream 0 at ts 164
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 166 from stream 0 at ts 165
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 110 QP=27.04 NAL=0 Slice:B Poc:12  I:6    P:112  SKIP:4010 size=169 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 167 from stream 0 at ts 165
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 167 from stream 0 at ts 165
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 167 from stream 0 at ts 166
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 111 QP=20.60 NAL=2 Slice:P Poc:18  I:823  P:299  SKIP:3006 size=13268 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 168 from stream 0 at ts 166
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 168 from stream 0 at ts 166
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 168 from stream 0 at ts 167
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 112 QP=27.64 NAL=0 Slice:B Poc:16  I:14   P:374  SKIP:3739 size=561 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 169 from stream 0 at ts 167
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 169 from stream 0 at ts 167
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 169 from stream 0 at ts 168
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 113 QP=21.84 NAL=2 Slice:P Poc:22  I:115  P:135  SKIP:3878 size=4443 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 170 from stream 0 at ts 168
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 170 from stream 0 at ts 168
+[info] frame=  170 fps= 15 q=27.0 size=     256kB time=00:00:07.40 bitrate= 283.4kbits/s dup=0 drop=504 speed=0.661x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 170 from stream 0 at ts 169
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 114 QP=29.80 NAL=0 Slice:B Poc:20  I:22   P:144  SKIP:3962 size=248 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 171 from stream 0 at ts 169
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 171 from stream 0 at ts 169
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 171 from stream 0 at ts 170
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 115 QP=19.92 NAL=2 Slice:P Poc:30  I:212  P:555  SKIP:3361 size=12437 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 172 from stream 0 at ts 170
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 172 from stream 0 at ts 170
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 172 from stream 0 at ts 171
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 116 QP=29.90 NAL=2 Slice:B Poc:26  I:17   P:144  SKIP:3966 size=244 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 173 from stream 0 at ts 171
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 173 from stream 0 at ts 171
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 173 from stream 0 at ts 172
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 117 QP=30.00 NAL=0 Slice:B Poc:24  I:6    P:156  SKIP:3966 size=159 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 174 from stream 0 at ts 172
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 174 from stream 0 at ts 172
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 174 from stream 0 at ts 173
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 118 QP=30.00 NAL=0 Slice:B Poc:28  I:6    P:77   SKIP:4045 size=101 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 175 from stream 0 at ts 173
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 175 from stream 0 at ts 173
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 175 from stream 0 at ts 174
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 119 QP=19.12 NAL=2 Slice:P Poc:38  I:22   P:206  SKIP:3900 size=1996 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 176 from stream 0 at ts 174
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 176 from stream 0 at ts 174
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 176 from stream 0 at ts 175
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 120 QP=28.00 NAL=2 Slice:B Poc:34  I:5    P:145  SKIP:3978 size=149 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 177 from stream 0 at ts 175
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 177 from stream 0 at ts 175
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 177 from stream 0 at ts 176
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 121 QP=30.00 NAL=0 Slice:B Poc:32  I:5    P:162  SKIP:3961 size=157 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[info] frame=  178 fps= 15 q=27.0 size=     256kB time=00:00:07.93 bitrate= 264.4kbits/s dup=0 drop=526 speed=0.678x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 178 from stream 0 at ts 176
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 178 from stream 0 at ts 176
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 178 from stream 0 at ts 177
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 122 QP=30.00 NAL=0 Slice:B Poc:36  I:5    P:127  SKIP:3996 size=121 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 179 from stream 0 at ts 177
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 179 from stream 0 at ts 177
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 179 from stream 0 at ts 178
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 123 QP=15.77 NAL=2 Slice:P Poc:46  I:21   P:112  SKIP:3995 size=1659 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 180 from stream 0 at ts 178
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 180 from stream 0 at ts 178
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 180 from stream 0 at ts 179
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 124 QP=28.00 NAL=2 Slice:B Poc:42  I:5    P:50   SKIP:4073 size=91 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 181 from stream 0 at ts 179
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 181 from stream 0 at ts 179
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 181 from stream 0 at ts 180
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 125 QP=29.97 NAL=0 Slice:B Poc:40  I:5    P:68   SKIP:4055 size=136 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 182 from stream 0 at ts 180
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 182 from stream 0 at ts 180
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 182 from stream 0 at ts 181
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 126 QP=30.00 NAL=0 Slice:B Poc:44  I:4    P:56   SKIP:4068 size=87 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 183 from stream 0 at ts 181
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 183 from stream 0 at ts 181
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 183 from stream 0 at ts 182
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 127 QP=16.27 NAL=2 Slice:P Poc:54  I:1    P:62   SKIP:4065 size=203 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 184 from stream 0 at ts 182
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 184 from stream 0 at ts 182
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 184 from stream 0 at ts 183
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 128 QP=28.00 NAL=2 Slice:B Poc:50  I:3    P:31   SKIP:4094 size=76 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 185 from stream 0 at ts 183
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 185 from stream 0 at ts 183
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 185 from stream 0 at ts 184
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 129 QP=30.00 NAL=0 Slice:B Poc:48  I:3    P:36   SKIP:4089 size=70 bytes
+[info] frame=  186 fps= 15 q=27.0 size=     256kB time=00:00:08.46 bitrate= 247.7kbits/s dup=0 drop=550 speed=0.693x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 186 from stream 0 at ts 184
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 186 from stream 0 at ts 184
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 186 from stream 0 at ts 185
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 130 QP=30.00 NAL=0 Slice:B Poc:52  I:3    P:38   SKIP:4087 size=70 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 187 from stream 0 at ts 185
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 187 from stream 0 at ts 185
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 187 from stream 0 at ts 186
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 131 QP=17.75 NAL=2 Slice:P Poc:62  I:1    P:46   SKIP:4081 size=150 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 188 from stream 0 at ts 186
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 188 from stream 0 at ts 186
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 188 from stream 0 at ts 187
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 132 QP=28.00 NAL=2 Slice:B Poc:58  I:3    P:16   SKIP:4109 size=63 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 189 from stream 0 at ts 187
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 189 from stream 0 at ts 187
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 189 from stream 0 at ts 188
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 133 QP=30.00 NAL=0 Slice:B Poc:56  I:3    P:18   SKIP:4107 size=58 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 190 from stream 0 at ts 188
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 190 from stream 0 at ts 188
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 190 from stream 0 at ts 189
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 134 QP=30.00 NAL=0 Slice:B Poc:60  I:3    P:14   SKIP:4111 size=55 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 191 from stream 0 at ts 189
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 191 from stream 0 at ts 189
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 191 from stream 0 at ts 190
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 135 QP=18.01 NAL=2 Slice:P Poc:70  I:0    P:25   SKIP:4103 size=92 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 192 from stream 0 at ts 190
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 192 from stream 0 at ts 190
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 192 from stream 0 at ts 191
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 136 QP=28.00 NAL=2 Slice:B Poc:66  I:3    P:10   SKIP:4115 size=56 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 193 from stream 0 at ts 191
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 193 from stream 0 at ts 191
+[info] frame=  193 fps= 15 q=27.0 size=     256kB time=00:00:08.93 bitrate= 234.8kbits/s dup=0 drop=573 speed=0.701x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 193 from stream 0 at ts 192
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 137 QP=30.00 NAL=0 Slice:B Poc:64  I:3    P:7    SKIP:4118 size=49 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 194 from stream 0 at ts 192
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 194 from stream 0 at ts 192
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 194 from stream 0 at ts 193
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 138 QP=30.00 NAL=0 Slice:B Poc:68  I:3    P:6    SKIP:4119 size=49 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 195 from stream 0 at ts 193
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 195 from stream 0 at ts 193
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 195 from stream 0 at ts 194
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 139 QP=16.79 NAL=2 Slice:P Poc:78  I:0    P:22   SKIP:4106 size=166 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 196 from stream 0 at ts 194
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 196 from stream 0 at ts 194
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 196 from stream 0 at ts 195
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 140 QP=28.00 NAL=2 Slice:B Poc:74  I:3    P:22   SKIP:4103 size=66 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 197 from stream 0 at ts 195
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 197 from stream 0 at ts 195
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 197 from stream 0 at ts 196
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 141 QP=30.00 NAL=0 Slice:B Poc:72  I:3    P:23   SKIP:4102 size=61 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 198 from stream 0 at ts 196
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 198 from stream 0 at ts 196
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 198 from stream 0 at ts 197
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 142 QP=30.00 NAL=0 Slice:B Poc:76  I:3    P:9    SKIP:4116 size=51 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 199 from stream 0 at ts 197
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 199 from stream 0 at ts 197
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 199 from stream 0 at ts 198
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 143 QP=16.97 NAL=2 Slice:P Poc:86  I:0    P:20   SKIP:4108 size=94 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 200 from stream 0 at ts 198
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 200 from stream 0 at ts 198
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 200 from stream 0 at ts 199
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 144 QP=28.00 NAL=2 Slice:B Poc:82  I:3    P:13   SKIP:4112 size=60 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[info] frame=  201 fps= 15 q=27.0 size=     256kB time=00:00:09.46 bitrate= 221.6kbits/s dup=0 drop=595 speed=0.715x    [rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 201 from stream 0 at ts 199
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 201 from stream 0 at ts 199
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 201 from stream 0 at ts 200
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 145 QP=30.00 NAL=0 Slice:B Poc:80  I:3    P:10   SKIP:4115 size=51 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 202 from stream 0 at ts 200
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 202 from stream 0 at ts 200
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 202 from stream 0 at ts 201
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 146 QP=30.00 NAL=0 Slice:B Poc:84  I:3    P:7    SKIP:4118 size=49 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 203 from stream 0 at ts 201
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 203 from stream 0 at ts 201
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 203 from stream 0 at ts 202
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 147 QP=17.81 NAL=2 Slice:P Poc:94  I:0    P:12   SKIP:4116 size=77 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 204 from stream 0 at ts 202
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 204 from stream 0 at ts 202
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 204 from stream 0 at ts 203
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 148 QP=28.00 NAL=2 Slice:B Poc:90  I:3    P:11   SKIP:4114 size=58 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 205 from stream 0 at ts 203
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 205 from stream 0 at ts 203
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 205 from stream 0 at ts 204
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 149 QP=30.00 NAL=0 Slice:B Poc:88  I:3    P:8    SKIP:4117 size=50 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 206 from stream 0 at ts 204
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 206 from stream 0 at ts 204
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 206 from stream 0 at ts 205
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 150 QP=28.29 NAL=0 Slice:B Poc:92  I:3    P:7    SKIP:4118 size=51 bytes
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[rawvideo @ 0x55a32b3e3bc0] [debug] PACKET SIZE: 4196352, STRIDE: 5464
+[verbose] *** dropping frame 207 from stream 0 at ts 205
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 151 QP=20.72 NAL=2 Slice:P Poc:100 I:179  P:262  SKIP:3687 size=3228 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 152 QP=29.00 NAL=2 Slice:B Poc:96  I:3    P:258  SKIP:3867 size=192 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 153 QP=30.00 NAL=0 Slice:B Poc:98  I:3    P:253  SKIP:3872 size=164 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 154 QP=21.10 NAL=2 Slice:P Poc:102 I:942  P:259  SKIP:2927 size=25898 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 155 QP=20.57 NAL=2 Slice:P Poc:104 I:133  P:710  SKIP:3285 size=15778 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 156 QP=20.21 NAL=2 Slice:P Poc:106 I:230  P:728  SKIP:3170 size=22365 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 157 QP=19.06 NAL=2 Slice:P Poc:108 I:233  P:815  SKIP:3080 size=23139 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 158 QP=18.67 NAL=2 Slice:P Poc:110 I:115  P:913  SKIP:3100 size=17804 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 159 QP=18.11 NAL=2 Slice:P Poc:118 I:95   P:1046 SKIP:2987 size=34696 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 160 QP=27.42 NAL=2 Slice:B Poc:114 I:7    P:148  SKIP:3973 size=116 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 161 QP=28.94 NAL=0 Slice:B Poc:112 I:36   P:1154 SKIP:2930 size=1051 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 162 QP=30.00 NAL=0 Slice:B Poc:116 I:11   P:11   SKIP:4106 size=65 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 163 QP=18.01 NAL=2 Slice:P Poc:126 I:6    P:162  SKIP:3960 size=1090 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 164 QP=25.41 NAL=2 Slice:B Poc:122 I:10   P:117  SKIP:4001 size=148 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 165 QP=30.00 NAL=0 Slice:B Poc:120 I:7    P:107  SKIP:4014 size=130 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 166 QP=30.00 NAL=0 Slice:B Poc:124 I:7    P:41   SKIP:4080 size=83 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 167 QP=17.35 NAL=2 Slice:P Poc:134 I:4    P:55   SKIP:4069 size=353 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 168 QP=25.41 NAL=2 Slice:B Poc:130 I:8    P:31   SKIP:4089 size=95 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 169 QP=30.00 NAL=0 Slice:B Poc:128 I:6    P:27   SKIP:4095 size=73 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 170 QP=30.00 NAL=0 Slice:B Poc:132 I:6    P:15   SKIP:4107 size=62 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 171 QP=17.21 NAL=2 Slice:P Poc:142 I:0    P:29   SKIP:4099 size=169 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 172 QP=25.66 NAL=2 Slice:B Poc:138 I:7    P:17   SKIP:4104 size=78 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 173 QP=30.00 NAL=0 Slice:B Poc:136 I:6    P:17   SKIP:4105 size=63 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 174 QP=30.00 NAL=0 Slice:B Poc:140 I:6    P:15   SKIP:4107 size=60 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 175 QP=17.28 NAL=2 Slice:P Poc:150 I:0    P:22   SKIP:4106 size=131 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 176 QP=28.00 NAL=2 Slice:B Poc:146 I:5    P:18   SKIP:4105 size=68 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 177 QP=30.00 NAL=0 Slice:B Poc:144 I:7    P:14   SKIP:4107 size=62 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 178 QP=30.00 NAL=0 Slice:B Poc:148 I:7    P:10   SKIP:4111 size=57 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 179 QP=18.59 NAL=2 Slice:P Poc:158 I:0    P:40   SKIP:4088 size=126 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 180 QP=28.00 NAL=2 Slice:B Poc:154 I:7    P:11   SKIP:4110 size=64 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 181 QP=30.00 NAL=0 Slice:B Poc:152 I:5    P:13   SKIP:4110 size=56 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 182 QP=30.00 NAL=0 Slice:B Poc:156 I:5    P:13   SKIP:4110 size=56 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 183 QP=19.53 NAL=2 Slice:P Poc:166 I:0    P:35   SKIP:4093 size=122 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 184 QP=28.00 NAL=2 Slice:B Poc:162 I:5    P:13   SKIP:4110 size=63 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 185 QP=30.00 NAL=0 Slice:B Poc:160 I:7    P:10   SKIP:4111 size=57 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 186 QP=30.00 NAL=0 Slice:B Poc:164 I:7    P:10   SKIP:4111 size=57 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 187 QP=20.06 NAL=2 Slice:P Poc:174 I:0    P:56   SKIP:4072 size=140 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 188 QP=28.00 NAL=2 Slice:B Poc:170 I:7    P:11   SKIP:4110 size=64 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 189 QP=30.00 NAL=0 Slice:B Poc:168 I:5    P:12   SKIP:4111 size=55 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 190 QP=30.00 NAL=0 Slice:B Poc:172 I:5    P:12   SKIP:4111 size=56 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 191 QP=19.41 NAL=2 Slice:P Poc:182 I:0    P:6    SKIP:4122 size=64 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 192 QP=28.00 NAL=2 Slice:B Poc:178 I:5    P:13   SKIP:4110 size=63 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 193 QP=30.00 NAL=0 Slice:B Poc:176 I:7    P:10   SKIP:4111 size=57 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 194 QP=30.00 NAL=0 Slice:B Poc:180 I:7    P:10   SKIP:4111 size=57 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 195 QP=23.00 NAL=2 Slice:P Poc:190 I:0    P:0    SKIP:4128 size=46 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 196 QP=28.00 NAL=2 Slice:B Poc:186 I:7    P:11   SKIP:4110 size=64 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 197 QP=30.00 NAL=0 Slice:B Poc:184 I:5    P:13   SKIP:4110 size=56 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 198 QP=30.00 NAL=0 Slice:B Poc:188 I:5    P:13   SKIP:4110 size=56 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 199 QP=24.85 NAL=2 Slice:P Poc:192 I:362  P:165  SKIP:3601 size=5620 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 200 QP=25.22 NAL=2 Slice:P Poc:194 I:626  P:172  SKIP:3330 size=9540 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 201 QP=24.90 NAL=2 Slice:P Poc:196 I:437  P:256  SKIP:3435 size=5874 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 202 QP=24.84 NAL=2 Slice:P Poc:198 I:316  P:512  SKIP:3300 size=11859 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 203 QP=24.45 NAL=2 Slice:P Poc:200 I:136  P:467  SKIP:3525 size=4449 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 204 QP=29.12 NAL=2 Slice:P Poc:206 I:186  P:308  SKIP:3634 size=4693 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 205 QP=27.98 NAL=2 Slice:B Poc:202 I:13   P:531  SKIP:3570 size=1718 bytes
+[libx264 @ 0x55a32b3e5a00] [debug] frame= 206 QP=28.51 NAL=0 Slice:B Poc:204 I:19   P:496  SKIP:3597 size=1061 bytes
+[info] frame=  207 fps= 15 q=-1.0 Lsize=     693kB time=00:00:13.60 bitrate= 417.6kbits/s dup=0 drop=615 speed=0.984x    
+[info] video:690kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.454590%
 [verbose] Input file #0 (:0):
-[verbose]   Input stream #0:0 (video): 0 packets read (0 bytes); 0 frames decoded; 
-[verbose]   Total: 0 packets (0 bytes) demuxed
-[verbose] Output file #0 (data/video/@buscar_2-BuscarumprodutoquenãoexistenapáginadaPrinti-37047cf5-c0ca-40eb-8163-42a02433968b.mp4):
-[verbose]   Output stream #0:0 (video): 0 frames encoded; 0 packets muxed (0 bytes); 
-[verbose]   Total: 0 packets (0 bytes) muxed
-[debug] 0 frames successfully decoded, 0 decoding errors
-[AVIOContext @ 0x556c9e11aa00] [verbose] Statistics: 2 seeks, 3 writeouts
+[verbose]   Input stream #0:0 (video): 822 packets read (3449401344 bytes); 822 frames decoded; 
+[verbose]   Total: 822 packets (3449401344 bytes) demuxed
+[verbose] Output file #0 (data/video/@buscar_2-BuscarumprodutoquenãoexistenapáginadaPrinti-e9403eb7-e6a8-46f7-87ad-e7bbc0529db1.mp4):
+[verbose]   Output stream #0:0 (video): 207 frames encoded; 207 packets muxed (706791 bytes); 
+[verbose]   Total: 207 packets (706791 bytes) muxed
+[debug] 822 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 0x55a32b3e6a00] [verbose] Statistics: 2 seeks, 6 writeouts
+[libx264 @ 0x55a32b3e5a00] [info] frame I:2     Avg QP:15.43  size: 71873
+[libx264 @ 0x55a32b3e5a00] [info] frame P:64    Avg QP:19.45  size:  8128
+[libx264 @ 0x55a32b3e5a00] [info] frame B:141   Avg QP:27.58  size:   299
+[libx264 @ 0x55a32b3e5a00] [info] consecutive B-frames:  6.8%  4.8%  7.2% 81.2%
+[libx264 @ 0x55a32b3e5a00] [info] mb I  I16..4: 42.1% 35.5% 22.4%
+[libx264 @ 0x55a32b3e5a00] [info] mb P  I16..4:  2.8%  3.1%  2.1%  P16..4:  3.5%  0.8%  0.6%  0.0%  0.0%    skip:87.1%
+[libx264 @ 0x55a32b3e5a00] [info] mb B  I16..4:  0.3%  0.3%  0.1%  B16..8:  2.7%  0.1%  0.0%  direct: 0.0%  skip:96.6%  L0:45.6% L1:53.2% BI: 1.2%
+[libx264 @ 0x55a32b3e5a00] [info] 8x8 transform intra:38.1% inter:56.7%
+[libx264 @ 0x55a32b3e5a00] [info] coded y,uvDC,uvAC intra: 24.3% 27.1% 24.2% inter: 0.7% 0.8% 0.5%
+[libx264 @ 0x55a32b3e5a00] [info] i16 v,h,dc,p: 46% 54%  0%  0%
+[libx264 @ 0x55a32b3e5a00] [info] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 37% 10% 42%  1%  2%  0%  4%  0%  4%
+[libx264 @ 0x55a32b3e5a00] [info] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 29% 16%  3%  5%  4%  8%  3%  6%
+[libx264 @ 0x55a32b3e5a00] [info] i8c dc,h,v,p: 71% 18%  9%  1%
+[libx264 @ 0x55a32b3e5a00] [info] Weighted P-Frames: Y:1.6% UV:1.6%
+[libx264 @ 0x55a32b3e5a00] [info] ref P L0: 71.0%  7.7% 15.8%  5.4%  0.1%
+[libx264 @ 0x55a32b3e5a00] [info] ref B L0: 79.2% 18.5%  2.3%
+[libx264 @ 0x55a32b3e5a00] [info] ref B L1: 97.0%  3.0%
+[libx264 @ 0x55a32b3e5a00] [info] kb/s:409.33
