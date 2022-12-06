@@ -1,0 +1,132 @@
+[
+  {
+    "id": "testes-do-fluxo-busca-de-produto-no-site-da-printi",
+    "uri": "features/buscar.feature",
+    "keyword": "Funcionalidade",
+    "name": "Testes do fluxo busca de produto no site da Printi",
+    "description": "",
+    "line": 5,
+    "tags": [
+      {
+        "name": "@buscar",
+        "line": 4
+      }
+    ],
+    "elements": [
+      {
+        "id": "testes-do-fluxo-busca-de-produto-no-site-da-printi;buscar-um-produto-que-não-existe-na-página-da-printi",
+        "keyword": "Cenario",
+        "name": "Buscar um produto que não existe na página da Printi",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que acesso o mecanismo de busca Google buscando pelo site da 'Printi'",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14346338268
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "realizo uma busco pelo produto 'Inexistente'",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168950000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "valido que nenhum produto foi encontrado",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/step_buscar.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129205845
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buscar",
+            "line": 4
+          },
+          {
+            "name": "@buscar_2",
+            "line": 21
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40984
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45984
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32129185189
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57444
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11131094891
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.38.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 255564909
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

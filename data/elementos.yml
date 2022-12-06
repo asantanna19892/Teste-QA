@@ -1,0 +1,13 @@
+################# Google #######################
+
+busca_google: "input[title='Pesquisar']"
+btn_buscar_google: "div[jsname='VlcLAe'] input[class= 'gNO89b']"
+printi: "a[href='https://www.printi.com.br/']"
+
+################# Printi #######################
+
+input_buscar: "input[id='input-search-page']"
+btn_buscar_print: "button[type='submit']"
+mais_produtos: "a[kind='link']"
+result: "div[data-insights-index='products_live']"
+buscar_segundo: "//*[@id='main']/div[2]/div/div[1]/span/label/button"
