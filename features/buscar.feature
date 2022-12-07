@@ -2,11 +2,11 @@
 # encode: UTF-8
 
 @buscar
-Funcionalidade: Testes do fluxo busca de produto no site da Printi
-
+Funcionalidade: Validar o fluxo busca de produto no site da Printi
+   
 
 @buscar_1  
-Esquema do Cenario: Buscar um produto na página da Printi
+Esquema do Cenario: Usuário Busca por um produto na página da Printi e consegue encontrá-lo
     Dado que acesso o mecanismo de busca Google buscando pelo site da 'Printi'
     Quando realizo uma busco pelo produto <Produto> 
     Entao valido que fui direcionado para o resultado da busca por <Produto> 
@@ -19,7 +19,7 @@ Exemplos:
 |"Flyer"                  |
 
 @buscar_2
-Cenario: Buscar um produto que não existe na página da Printi
+Cenario: Usuário Busca por um produto na página da Printi e não consegue encontrá-lo
     Dado que acesso o mecanismo de busca Google buscando pelo site da 'Printi'
     Quando realizo uma busco pelo produto 'Inexistente'
     Então valido que nenhum produto foi encontrado
