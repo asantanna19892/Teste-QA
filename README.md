@@ -125,6 +125,11 @@ As evidências de teste foram geradas na forma de vídeos de cada validação de
 
 As evidências na forma de videos foram armazenadas na pasta data/video, A seguir, um preview da automação rodando em tela.
 
+
 ![EvidenciaTerminal](https://github.com/asantanna19892/Teste-QA/blob/main/data/video/buscar_1-Buscarumprodutonap%C3%A1ginadaPrinti-14ea033f-6b1b-44c4-9979-92b3a8413c0e.gif)
 
 
+Obs.: O método de gravação de tela "ScreenRecorder" utilizado tem como pré-requisito a instalação do ffmpeg que pode ser feita através dos passos a seguir:
+
+> $ sudo apt update <br /> 
+> $ sudo apt install ffmpeg
